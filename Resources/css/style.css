@@ -256,7 +256,8 @@ body {
   text-align: left;
   -webkit-filter: opacity(0.8);
           filter: opacity(0.8);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+ "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .home main .posts {
