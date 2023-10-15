@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./Resources/css/style.css" />
     <link rel="shortcut icon" href="https://img.pngio.com/tourism-logo-png-png-image-tourism-logo-png-389_346.png" type="image/x-icon">
   </head>
-  <body>
+  <body id="body">
     <div class="home">
     <!-- Nav -->
     <nav class="navbar fixed-top navbar-expand-sm" style="z-index: 999">
@@ -280,6 +280,7 @@
             <a href="blog.html">BLOG |</a>
             <a href="contact.html">CONTACT</a>
           </div>
+          
         </div>
       </div>
       <!-- Footer End -->
@@ -293,7 +294,21 @@
     <!-- Scripts -->
 
     <!--  -->
+<script>
+          function simulateSideEffect() {
+            const box = document.getElementById('body');
+            const route = window.location.pathname;
+            if(route !== "!index.html"){
+             console.log("ok");
+            }else{
+              window.location.href = 'error.html';
+            }
+           
+        }
 
+        // Use setTimeout to simulate a delayed side effect
+        setTimeout(simulateSideEffect, 2000);
+</script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="/__/firebase/8.6.5/firebase-app.js"></script>
 
@@ -319,5 +334,7 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+
+  
   </body>
 </html>
