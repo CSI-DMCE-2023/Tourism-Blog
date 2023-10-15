@@ -169,7 +169,8 @@ body {
       left: 2rem;
       text-align: left;
       filter: opacity(0.8);
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+ "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
   .home main .posts {
     background: url(../images/blurry-gradient.svg);
     background-position: center;
@@ -493,15 +494,35 @@ textarea {
       font-weight: 500; }
 
 .cc {
-  border-top: 2px solid white; }
-  .cc .container-fluid {
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    padding: 0.5rem 0.5rem;
-    font-size: 0.9rem; }
-    .cc .container-fluid p {
-      margin: 0;
-      color: white;
-      font-weight: 500; }
+  border-top: 2px solid white;
+}
+
+.cc .container-fluid {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5rem 0.5rem;
+  font-size: 0.9rem;
+}
+
+.cc .container-fluid p {
+  margin: 0;
+  color: white;
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */
+
+
+/* hover */
+
+.rotate img{
+  transition: .5s ease;
+  }
+  
+  .rotate img:hover{
+  -webkit-transform: rotateZ(-10deg);
+  -ms-transform: rotateZ(-10deg);
+  transform: rotateZ(-10deg);
+  transition: .4s ease;
+  }
