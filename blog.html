@@ -16,7 +16,7 @@
   </head>
   <body>
 
-    <div class="blog">
+    <div class="blog" id="top">
       <!-- Nav -->
 
         <nav class="navbar fixed-top navbar-expand-sm style="z-index: 999;"">
@@ -228,6 +228,9 @@
     </div>
   </div>
 </div>
+<div id="back-to-top">
+  <a href="#top">Back to Top</a>
+</div>
 <!-- Footer End -->
    <!-- CC -->
 <div class="cc">
@@ -238,6 +241,40 @@
 <!-- CC End-->
 
     <!-- Scripts -->
+    <script>
+      // back to top btn js 
+
+
+const backToTopButton = document.getElementById("back-to-top");
+
+// Show the button when the user scrolls down a certain amount
+window.addEventListener("scroll", function() {
+    if (document.documentElement.scrollTop > 100) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+});
+
+// Function for smooth scrolling to the top
+function scrollToTop() {
+    const smoothScrollToTop = () => {
+        const currentPosition = document.documentElement.scrollTop;
+        if (currentPosition > 0) {
+            window.requestAnimationFrame(smoothScrollToTop);
+            window.scrollTo(0, currentPosition - currentPosition / 10);
+        }
+    };
+    smoothScrollToTop();
+}
+
+// Scroll to the top smoothly when the button is clicked
+backToTopButton.addEventListener("click", scrollToTop);
+
+
+
+//
+    </script>
 
     <script src="https://kit.fontawesome.com/15a0e7cd00.js" crossorigin="anonymous"></script>
 
